@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:sampleSIGABRT" x:Class="sampleSIGABRT.MainPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <ScrollView x:Name="scroll" Orientation="Vertical" VerticalOptions="FillAndExpand">
+                <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" Spacing="10" Padding="5">
+                    <Button Text="Button #1" FontSize="20" HorizontalOptions="CenterAndExpand"/>
+                    <Button Text="Button #2" FontSize="20" HorizontalOptions="CenterAndExpand"/>
+                    <Button Text="Button #3" FontSize="20" HorizontalOptions="CenterAndExpand"/>
+                    <Button Text="Button #4" FontSize="20" HorizontalOptions="CenterAndExpand"/>
+                    <Button Text="Button #5" FontSize="20" HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </ScrollView>
+            <StackLayout x:Name="overlay" IsVisible="false" VerticalOptions="FillAndExpand">
+                <ActivityIndicator IsRunning="True" IsVisible="true" Color="Black"
+                    HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
+                <Label Text="Cargando . . ." FontSize="20" FontAttributes="Bold"
+                    HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
